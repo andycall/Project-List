@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <title>广播稿</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../Public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Public/css/normalize.css"/>
+    <link rel="stylesheet" href="../Public/css/main.css"/>
+</head>
+<body>
+<form method="post" id="Form">
+    <div class="container">
+        <nav>
+            <p>信息填写</p>
+        </nav>
+        <section class="form_box">
+            <section class="form_sec">
+                <span><img src="../Public/images/home.png" alt="home"/></span>
+                <label for="colleage">学院</label>
+                <input type="text" name="colleage" readonly required="true"/>
+                <div class="select_wrapper">
+                    <select id="colleage">
+                        <option value="软件学院">软件学院</option>
+                        <option value="计算机科学与技术学院">计算机科学与技术学院</option>
+                        <option value="体育学院">体育学院</option>
+                        <option value="光电学院">光电学院</option>
+                        <option value="传媒艺术学院">传媒艺术学院</option>
+                        <option value="生物信息学院">生物信息学院</option>
+                        <option value="自动化学院">自动化学院</option>
+                        <option value="光电工程学院">光电工程学院</option>
+                        <option value="国际半导体学院">国际半导体学院</option>
+                        <option value="国际学院">国际学院</option>
+                        <option value="外国语学院">外国语学院</option>
+                        <option value="法学院">法学院</option>
+                        <option value="经济管理学院">经济管理学院</option>
+                        <option value="数理学院">数理学院</option>
+                        <option value="通信与信息工程学院">通信与信息工程学院</option>
+                    </select>
+                </div>
+                <div class="select_button">
+                    <div class="select_button_wrapper">
+                        <img src="../Public/images/arrow.png" alt="arrow"/>
+                    </div>
+                </div>
+            </section>
+            <section class="form_sec">
+                <span><img src="../Public/images/users.png" alt="users"/></span>
+                <label for="grade">班级</label>
+                <input type="text" id="grade"  name="grade" required/>
+                <div class="cancel">
+                    <img src="../Public/images/cancel.png" alt="cancel"/>
+                </div>
+            </section>
+            <section class="form_sec">
+                <span><img src="../Public/images/user.png" alt="user"/></span>
+                <label for="name">姓名</label>
+                <input type="text" id="name"  name="name" required/>
+                <div class="cancel">
+                    <img src="../Public/images/cancel.png" alt="cancel"/>
+                </div>
+            </section>
+            <section class="form_sec">
+                <span><img src="../Public/images/document.png" alt="document"/></span>
+                <label for="content">投稿内容</label>
+                <div class="right_cancel">
+                    <img src="../Public/images/cancel.png" alt="cancel"/>
+                </div>
+            </section>
+            <section class="form_sec">
+                <div class="text_wrapper">
+                    <textarea type="text" id="content" name="content" required/></textarea>
+                </div>
+            </section>
+        </section>
+        <input type="submit" name="submit" class="submit_button" formnovalidate/>
+        <div class="copy_right">
+            <img src="../Public/images/redrock.png" alt="redrock"/>
+        </div>
+    </div>
+</form>
+</body>
+<script type="text/javascript" src="../Public/javascripts/jquery.js"></script>
+<script type="text/javascript" src="../Public/javascripts/static.js"></script>
+</html>

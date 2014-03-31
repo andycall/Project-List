@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<style>
+<!--
+body{
+    background: rgba(0,0,0,0.3);
+}
+
+.dropdown{
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+}
+.dropdown .hidden{
+    position: absolute;
+    width:100px;
+    height: 100px;
+    background: blue;
+}
+.dropdown select{
+    border:0;
+    top: 0;
+    left: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    z-index: -1;
+    background: url("Public/images/arrow.png") no-repeat;
+}
+
+
+-->
+</style>
+<body>
+<div class="dropdown">
+    <div class="hidden"></div>
+    <select name="hello" id="hello">
+        <option value="1">asdsadsad</option>
+        <option value="2">sadasdsadsad</option>
+        <option value="3">fdgfdgfdgfdgfdg</option>
+        <option value="4">cvczcxzxzc</option>
+    </select>
+
+
+    <form action="">
+        <input type="text" required=""/>
+        <input type="submit" name="submit"/>
+    </form>
+</div>
+</body>
+<script type="text/javascript" src="Public/javascripts/jquery.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+
+        $('.hidden').click(function() {
+            open($('#hello'));
+        });
+
+    });
+    function open(elem) {
+        if (document.createEvent) {
+            var e = document.createEvent("MouseEvents");
+            e.initMouseEvent("mousedown", true, true, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
+            elem[0].dispatchEvent(e);
+        } else if (element.fireEvent) {
+            elem[0].fireEvent("onmousedown");
+        }
+    }
+</script>
+</html>

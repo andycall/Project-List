@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+ function F(name,year,fn){
+     console.log(name);
+     console.log(year);
+     fn.apply(this);
+ }
+
+
+ function Run(F,param){
+     F.apply(null,param);
+ }
+
+
+ Run(F,['hello','year',function(){alert(1)}]);
+
+
+
+
+</script>
+</html>
